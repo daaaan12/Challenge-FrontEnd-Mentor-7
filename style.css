@@ -1,0 +1,117 @@
+/* 
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700
+
+
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@600&display=swap');
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-gray: hsl(212, 45%, 89%);
+    --color-grayish-blue: hsl(220, 15%, 55%);
+    --color-dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 1.3em;
+    font-family: 'Arvo', serif;  
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#card {
+    
+    background-color: var(--color-white);
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px 4px rgb(185, 181, 181); 
+}
+
+#card:hover {
+    
+    box-shadow: 2px 2px 10px 10px rgb(54, 57, 255);
+}
+
+.img-qr {
+    width: 260px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px 4px rgb(79, 150, 255);
+}
+
+.container-texto {
+   
+    width: 80%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media (max-width: 375px) {
+    #card {
+        width: 230px;
+        height: 320px;
+        box-shadow: 2px 2px 10px 10px rgb(54, 57, 255);
+    }
+
+    .container-texto {
+        font-size: 0.7em;
+    }
+
+
+    .img-qr {
+        width: 160px;
+        position: relative;
+        left: 15px;
+    }
+
+
+}
